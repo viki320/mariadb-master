@@ -14,6 +14,8 @@ build:
 deploy:
     context: alpha/DEV
     replicas: 1
+    port:
+    - 3306
 
 volumes:
   - claim: mariadb-master-data
@@ -33,10 +35,4 @@ properties:
       vault: MYSQL_PASSWORD_KEY
     MYSQL_ROOT_PASSWORD:
       vault: MYSQL_ROOT_PASSWORD_KEY
-    MYSQL_CONNECTIONDB: mysql
-    MYSQL_CONNECTUSER: root
-    AWS_ACCESS_KEY_ID:
-      vault: AWS_ACCESS_KEY_ID
-    AWS_SECRET_ACCESS_KEY:
-      vault: AWS_SECRET_ACCESS_KEY
     revision : 01
