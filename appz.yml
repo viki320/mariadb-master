@@ -21,7 +21,10 @@ volumes:
   - claim: mariadb-master-data
     mount: /appz/data
     name: data
-
+    size: 10Gi
+    class: microk8s-hostpath
+    mode: ReadWriteOnce
+    
 monitor:
     notify: appzops@cloudbourne.co
 
