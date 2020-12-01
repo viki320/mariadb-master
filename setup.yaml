@@ -2,13 +2,40 @@
 users:
   - name: springuser
     password: MYSQL_SPRINGUSER_PASSWORD
-  
+    
+  - name: springuser1
+    password: MYSQL_SPRINGUSER1_PASSWORD
+    
+  - name: springuser2
+    password: MYSQL_SPRINGUSER2_PASSWORD
+    
+  - name: springuser3
+    password: MYSQL_SPRINGUSER3_PASSWORD
+    
+  - name: springuser4
+    password: MYSQL_SPRINGUSER4_PASSWORD
   #- name: appz2
   #  password: MYSQL_USER2PASS
 
 databases:
   - name: springdb
     owner: springuser
+    priv: ALL
+ 
+  - name: springdb1
+    owner: springuser1
+    priv: ALL
+    
+  - name: springdb2
+    owner: springuser2
+    priv: ALL
+    
+  - name: springdb3
+    owner: springuser3
+    priv: ALL
+    
+  - name: springdb4
+    owner: springuser4
     priv: ALL
 
   #- name: appzdb2
