@@ -30,13 +30,17 @@ monitor:
     notify: appzops@cloudbourne.co
 
 properties:
-    MYSQL_USER: wordpress
-    MYSQL_DATABASE: wordpress
+    MYSQL_USER: springuser
+    MYSQL_DATABASE: springdb
+    MYSQL_CONNECTIONDB: mysql
+    MYSQL_CONNECTUSER: root
     MYSQL_REPLICATION_USER: replication
     MYSQL_REPLICATION_PASSWORD:
       vault: MYSQL_REPLICATION_PASSWORD
     MYSQL_PASSWORD:
       vault: MYSQL_PASSWORD_KEY
+    MYSQL_SPRINGUSER_PASSWORD:
+      vault: MYSQL_SPRINGUSER_PASSWORD
     MYSQL_ROOT_PASSWORD:
       vault: MYSQL_ROOT_PASSWORD_KEY
-    revision : 24
+    revision : 66
