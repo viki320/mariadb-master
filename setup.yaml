@@ -1,7 +1,7 @@
 ---
 users:
   - name: springuser
-    password: MYSQL_SPRINGUSER
+    password: MYSQL_SPRINGUSER_PASSWORD
   
   #- name: appz2
   #  password: MYSQL_USER2PASS
