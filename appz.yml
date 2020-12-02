@@ -51,4 +51,4 @@ properties:
       vault: MYSQL_SPRINGUSER4_PASSWORD
     MYSQL_ROOT_PASSWORD:
       vault: MYSQL_ROOT_PASSWORD_KEY
-    revision : 24
+    revision : 25
