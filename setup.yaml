@@ -1,7 +1,7 @@
 ---
 users:
   - name: springuser1
-    password: MYSQL_SPRINGUSER1_PASSWORD
+    password: $MYSQL_SPRINGUSER1_PASSWORD
 
 databases:
   - name: springdb1
