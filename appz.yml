@@ -30,8 +30,8 @@ monitor:
     notify: appzops@cloudbourne.co
 
 properties:
-    MYSQL_USER: springuser
-    MYSQL_DATABASE: springdb
+    #MYSQL_USER: springuser
+    #MYSQL_DATABASE: springdb
     MYSQL_CONNECTIONDB: mysql
     MYSQL_CONNECTUSER: root
     MYSQL_REPLICATION_USER: replication
