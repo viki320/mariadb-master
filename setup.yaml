@@ -1,27 +1,13 @@
 ---
 users:
-  #- name: springuser
-  #  password: $MYSQL_SPRINGUSER_PASSWORD
-    
   - name: springuser1
     password: $MYSQL_SPRINGUSER1_PASSWORD
-    
-  #- name: appz2
-  #  password: MYSQL_USER2PASS
 
 databases:
-  #- name: springdb
   - name: springdb1
 
 acl:
-  #- database: springdb
-  #  user: springuser
-  #  access: ALL
 
   - database: springdb1
     user: springuser1
     access: ALL
-
-  #- name: appzdb2
-  #  owner: appz2
-  #  priv: SELECT
