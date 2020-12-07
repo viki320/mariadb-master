@@ -1,15 +1,15 @@
 ---
 users:
-  - name: springuser1
-    password: $MYSQL_SPRINGUSER1_PASSWORD
+  - name: springuser2
+    password: $MYSQL_SPRINGUSER2_PASSWORD
 
 databases:
-  - name: springdb1
+  - name: springdb2
 
 acl:
 
-  - database: springdb1
-    user: springuser1
+  - database: springdb2
+    user: springuser2
     access: ALL
 
 restore:
@@ -18,6 +18,6 @@ restore:
        url: None
        user: None
        password: None
-    user: root
-    password: $MYSQL_ROOT_PASSWORD_KEY  # password of the 'user' above.
+    user: None #root
+    password: None #$MYSQL_ROOT_PASSWORD_KEY  # password of the 'user' above.
     token:  #20201207-1710 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
