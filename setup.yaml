@@ -13,7 +13,7 @@ acl:
     access: ALL
 
 restore:
-  - database: springdb1
+  - database: None
     source:
        url: None
        user: None
