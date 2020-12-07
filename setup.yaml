@@ -11,3 +11,13 @@ acl:
   - database: springdb1
     user: springuser1
     access: ALL
+
+restore:
+  - database: springdb1
+    source:
+       url: None
+       user: None
+       password: None
+    user: root
+    password: $MYSQL_ROOT_PASSWORD  # password of the 'user' above.
+    token:  20201207-1705 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
