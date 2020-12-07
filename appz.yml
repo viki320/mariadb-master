@@ -30,8 +30,6 @@ monitor:
     notify: appzops@cloudbourne.co
 
 properties:
-    #MYSQL_USER: springuser
-    #MYSQL_DATABASE: springdb
     MYSQL_CONNECTIONDB: mysql
     MYSQL_CONNECTUSER: root
     MYSQL_REPLICATION_USER: replication
@@ -39,8 +37,8 @@ properties:
       vault: MYSQL_REPLICATION_PASSWORD
     MYSQL_PASSWORD:
       vault: MYSQL_PASSWORD_KEY
-    MYSQL_SPRINGUSER1_PASSWORD:
-      vault: MYSQL_SPRINGUSER1_PASSWORD
+    MYSQL_SPRINGUSER2_PASSWORD:
+      vault: MYSQL_SPRINGUSER2_PASSWORD
     MYSQL_ROOT_PASSWORD:
       vault: MYSQL_ROOT_PASSWORD_KEY
     revision : 25
