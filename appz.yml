@@ -25,18 +25,22 @@ volumes:
     size: 10Gi
     class: microk8s-hostpath
     mode: ReadWriteOnce
+  - claim: mariadb-master-backup
+    mount: /appz/backup
+    name: backup
+    size: 10Gi
+    class: microk8s-hostpath
+    mode: ReadWriteOnce    
     
 monitor:
     notify: appzops@cloudbourne.co
 
 properties:
-    MYSQL_USER: wordpress
-    MYSQL_DATABASE: wordpress
     MYSQL_REPLICATION_USER: replication
     MYSQL_REPLICATION_PASSWORD:
       vault: MYSQL_REPLICATION_PASSWORD
-    MYSQL_PASSWORD:
-      vault: MYSQL_PASSWORD_KEY
+    MYSQL_WORDPRESS_PASSWORD:
+      vault: MYSQL_WORDPRESS_PASSWORD
     MYSQL_ROOT_PASSWORD:
       vault: MYSQL_ROOT_PASSWORD_KEY
-    revision : 70
+    revision : 25
