@@ -10,10 +10,3 @@ acl:
     user: wordpress
     access: ALL
     
-restore:
-  - database: wordpress
-    source:
-       url: 'https://www.ecloudcontrol.com/wp-content/uploads/2020/12/accountdb_20201210.zip'
-    user: root
-    password: $MYSQL_ROOT_PASSWORD_KEY  # password of the 'user' above.
-    token:  20201229-1740 # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN)
