@@ -9,7 +9,6 @@ build:
     build_file: none
     output_files: output/*.zip
     image_template: mariadb_master-10.4
-    image_name: alpha/mariadb_master
 
 deploy:
     context: alpha/DEV
@@ -22,19 +21,12 @@ volumes:
   - claim: mariadb-master-data
     mount: /appz/data
     name: data
-    size: 10Gi
-    class: microk8s-hostpath
-    mode: ReadWriteOnce
+    size: 5Gi
   - claim: mariadb-master-backup
     mount: /appz/backup
     name: backup
-    size: 10Gi
-    class: microk8s-hostpath
-    mode: ReadWriteOnce    
-    
-monitor:
-    notify: appzops@cloudbourne.co
-
+    size: 5Gi
+  
 properties:
     MYSQL_REPLICATION_USER: replication
     MYSQL_REPLICATION_PASSWORD:
