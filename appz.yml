@@ -1,7 +1,7 @@
 app:
     name: mariadb Master
     code: mariadbmaster
-    notify:vignesh@nainatechnologies.com
+    notify: vignesh@nainatechnologies.com
 
 build:
     version: 10.4
