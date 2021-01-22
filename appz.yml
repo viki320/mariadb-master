@@ -1,7 +1,7 @@
 app:
     name: mariadb Master
     code: mariadbmaster
-    notify: appzdev@cloudbourne.co
+    notify:vignesh@nainatechnologies.com
 
 build:
     version: 10.4
@@ -11,7 +11,7 @@ build:
     image_template: mariadb_master-10.4
 
 deploy:
-    context: alpha/DEV
+    context: viki320/DEV
     type: statefulset
     replicas: 1
     port:
